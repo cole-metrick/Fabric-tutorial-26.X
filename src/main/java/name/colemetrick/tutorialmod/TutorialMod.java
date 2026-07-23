@@ -1,5 +1,6 @@
 package name.colemetrick.tutorialmod;
 
+import name.colemetrick.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -20,8 +21,9 @@ public class TutorialMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
 		LOGGER.info("Hello Fabric world!");
+
+		ModItems.registerModItems();
 	}
 
 	public static Identifier id(String path) {
