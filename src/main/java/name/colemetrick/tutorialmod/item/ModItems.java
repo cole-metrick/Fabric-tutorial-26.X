@@ -19,6 +19,8 @@ public class ModItems {
     // public static final Item MONSTER = registerItem("monster", properties -> new Item(properties._______));
     //name must be lowercase
     public static final Item MONSTER = registerItem("monster", Item::new);
+    public static final Item VIBRANIUM = registerItem("vibranium", Item::new);
+
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name),
@@ -29,6 +31,12 @@ public class ModItems {
         TutorialMod.LOGGER.info("Registering Mod Items for " + TutorialMod.MOD_ID);
 
         //Add item to the creative mode tab specified
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {output.accept(MONSTER);});
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
+            output.accept(MONSTER);
+        });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
+            output.accept(VIBRANIUM);
+        });
     }
 }
