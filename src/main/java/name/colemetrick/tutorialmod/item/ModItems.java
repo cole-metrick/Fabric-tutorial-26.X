@@ -18,6 +18,7 @@ public class ModItems {
     //Registers an item to the item registry under a name and item properties. Top one allows for property initialization
     // public static final Item MONSTER = registerItem("monster", properties -> new Item(properties._______));
     //name must be lowercase
+    //any new item added goes here and put into the creative tabs at the bottom. Then add to modmodelprovider and inster png into textures
     public static final Item MONSTER = registerItem("monster", Item::new);
     public static final Item VIBRANIUM = registerItem("vibranium", Item::new);
 
@@ -33,10 +34,12 @@ public class ModItems {
         //Add item to the creative mode tab specified
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
             output.accept(MONSTER);
+
         });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
             output.accept(VIBRANIUM);
+            //output.accept(_____);
         });
     }
 }
