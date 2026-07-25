@@ -1,5 +1,6 @@
 package name.colemetrick.tutorialmod.datagen;
 
+import name.colemetrick.tutorialmod.block.ModBlocks;
 import name.colemetrick.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -15,7 +16,10 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
-
+        blockModelGenerators.createTrivialCube(ModBlocks.VIBRANIUM_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.RAW_VIBRANIUM_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.VIBRANIUM_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.VIBRANIUM_DEEPSLATE_ORE);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package name.colemetrick.tutorialmod;
 
+import name.colemetrick.tutorialmod.block.ModBlocks;
 import name.colemetrick.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -24,6 +25,7 @@ public class TutorialMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 
 	public static Identifier id(String path) {
