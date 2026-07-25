@@ -1,6 +1,8 @@
 {
   "item.tutorialmod.monster": "Monster",
   "item.tutorialmod.vibranium": "Vibranium",
+  "item.tutorialmod.raw_vibranium": "Raw Vibranium",
+
 
   "block.tutorialmod.vibranium_ore": "Vibranium Ore",
   "block.tutorialmod.raw_vibranium_block": "Block of Raw Vibranium",

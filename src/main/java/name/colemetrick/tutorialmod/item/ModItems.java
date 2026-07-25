@@ -21,6 +21,7 @@ public class ModItems {
     //any new item added goes here and put into the creative tabs at the bottom. Then add to modmodelprovider and inster png into textures
     public static final Item MONSTER = registerItem("monster", Item::new);
     public static final Item VIBRANIUM = registerItem("vibranium", Item::new);
+    public static final Item RAW_VIBRANIUM = registerItem("raw_vibranium", Item::new);
 
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
@@ -34,12 +35,10 @@ public class ModItems {
         //Add item to the creative mode tab specified
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
             output.accept(MONSTER);
-
         });
-
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
             output.accept(VIBRANIUM);
-            //output.accept(_____);
+            output.accept(RAW_VIBRANIUM);
         });
     }
 }

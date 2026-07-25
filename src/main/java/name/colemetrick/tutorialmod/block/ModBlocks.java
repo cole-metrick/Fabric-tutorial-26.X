@@ -59,19 +59,11 @@ public class ModBlocks {
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
             output.accept(VIBRANIUM_ORE);
-
+            output.accept(VIBRANIUM_BLOCK);
         });
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> {
             output.accept(RAW_VIBRANIUM_BLOCK);
-
-        });
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
-            output.accept(VIBRANIUM_BLOCK);
-
-        });
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> {
             output.accept(VIBRANIUM_DEEPSLATE_ORE);
-
         });
     }
 }
