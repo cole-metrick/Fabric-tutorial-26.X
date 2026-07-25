@@ -7,6 +7,9 @@
   "block.tutorialmod.vibranium_ore": "Vibranium Ore",
   "block.tutorialmod.raw_vibranium_block": "Block of Raw Vibranium",
   "block.tutorialmod.vibranium_block": "Vibranium Block",
-  "block.tutorialmod.vibranium_deepslate_ore": "Deepslate Vibranium Ore"
+  "block.tutorialmod.vibranium_deepslate_ore": "Deepslate Vibranium Ore",
+
+  "creativemodetab.tutorialmod.mod_items": "Mod Tutorial Items",
+  "creativemodetab.tutorialmod.mod_blocks": "Mod Tutorial Blocks"
 
 }

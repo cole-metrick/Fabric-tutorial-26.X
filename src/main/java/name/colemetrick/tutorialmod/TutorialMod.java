@@ -1,6 +1,7 @@
 package name.colemetrick.tutorialmod;
 
 import name.colemetrick.tutorialmod.block.ModBlocks;
+import name.colemetrick.tutorialmod.creativemodetab.ModCreativeModeTabs;
 import name.colemetrick.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -26,6 +27,7 @@ public class TutorialMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModCreativeModeTabs.registerModCreativeModeTabs();
 	}
 
 	public static Identifier id(String path) {
